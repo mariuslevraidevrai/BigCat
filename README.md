@@ -26,5 +26,5 @@ BigCat is an opensource and secure messaging for local network like ncat.
 - clear : clear the console
 - bye : quit bigcat
 
-  # Warning
-  I am a beginner in dev and this is the first version of my project so there are probably many bugs thx :)
+# Warning
+Iam a beginner in dev and this is the first version of my project so there are probably many bugs thx :)
