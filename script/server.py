@@ -31,7 +31,7 @@ def server(IP, PORT):
                 passwd = client.recv(4096).decode("utf8")
                 if passwd == open("etc/password/password.key", "r").read():
                     resultOk = client.send("[*] Authentification successful! [*]".encode("utf8"))
-                    print(resultOk)
+                    print("[*] Authentification successful! [*]")
                     publicKey, privateKey = rsa.newkeys(2048)
                     client.send(publicKey.save_pkcs1())
                     key = client.recv(4096)
