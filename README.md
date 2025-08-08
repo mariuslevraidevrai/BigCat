@@ -11,12 +11,13 @@ BigCat is an opensource and secure messaging for local network like ncat.
 
 - Linux distro(Arch based, RHEL based or debian based)
 - x86 CPU
-- No Python(BigCat is dev in python but you can run the binary without python and libs)
+- Python 3.12
+- The rsa library (pip/pip3 install rsa)
 
 # Installation
 
 - Clone this repository
-- extract and execute the run binary (or run directly the bigcat binary in bin folder)
+- execute bigcat.py in the script directory(or compile manually the bigcat.py with pyinstaller)
 - Enjoy
 
 # Usage
