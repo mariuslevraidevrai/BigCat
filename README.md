@@ -17,7 +17,7 @@ BigCat is an opensource and secure messaging for local network like ncat.
 # Installation
 
 - Clone this repository
-- execute bigcat.py in the script directory(or compile manually the bigcat.py with pyinstaller)
+- execute bigcat.py(or compile manually the bigcat.py with pyinstaller)
 - Enjoy
 
 # Usage
