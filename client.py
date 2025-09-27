@@ -5,10 +5,11 @@ import rsa
 from cryptography.fernet import Fernet
 import hashlib
 import time
+import friends
 
 def loader(IP, PORT):
     animation = "|/-\\"
-    for i in range(20):
+    for i in range(10):
         time.sleep(0.1)
         sys.stdout.write(f"\rLoading... {animation[i % len(animation)]}")
         sys.stdout.flush()
@@ -37,6 +38,12 @@ def client(IP, PORT):
     elif passwordFind == "[!] No Password require [!]":
         print("[*] No password require [*]")
 
+    userName = s.recv(4096)
+    userName = userName.decode("utf8")
+    friendDialog = input(f"Do you want to add {userName} to your friends ? (Y/n) → ")
+    if friendDialog in ["y", "Y"]:
+        friends.add(userName, IP)
+
     publicKey = s.recv(4096)
     publicKey = rsa.PublicKey.load_pkcs1(publicKey)
     key = Fernet.generate_key()
@@ -44,6 +51,7 @@ def client(IP, PORT):
     s.send(encryptKey)
 
     f = Fernet(key)
+
 
     def clientSend():
         try:

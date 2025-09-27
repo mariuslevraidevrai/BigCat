@@ -32,6 +32,10 @@ def server(IP, PORT):
                 if passwd == open("etc/password/password.key", "r").read():
                     resultOk = client.send("[*] Authentification successful! [*]".encode("utf8"))
                     print("[*] Authentification successful! [*]")
+                    #Send the username
+                    userName = open("account/username.txt", "r").read().encode("utf8")
+                    client.send(userName)
+
                     publicKey, privateKey = rsa.newkeys(2048)
                     client.send(publicKey.save_pkcs1())
                     key = client.recv(4096)
@@ -61,6 +65,8 @@ def server(IP, PORT):
                     continue
             else:
                 client.send("[!] No Password require [!]".encode("utf8"))
+                userName = open("account/username.txt", "r").read().encode("utf8")
+                client.send(userName)
                 publicKey, privateKey = rsa.newkeys(2048)
                 client.send(publicKey.save_pkcs1())
                 key = client.recv(4096)
