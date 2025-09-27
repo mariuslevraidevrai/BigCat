@@ -26,6 +26,8 @@ BigCat is an opensource and secure messaging for local network like ncat.
 - join : connect to a session (Example : join 192.168.1.10 1234)
 - clear : clear the console
 - bye : quit bigcat
+- help : see the commands
+- code : generate a session code (Example : join 192.168.1.10 1234 code)
 
 # Warning
 Iam a beginner in dev and this is the first version of my project so there are probably many bugs thx :)
