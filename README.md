@@ -17,3 +17,7 @@ To install BigCat type
 ```bash
 make
 ```
+And to execute the binary type
+```bash
+./dist/bigcat
+```
