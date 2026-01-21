@@ -10,6 +10,10 @@
 * **Fernet (AES-128)** symmetric encryption for messages.
 * **Gzip** compression for fast file transfers.
 * **Terminal UI** design for best performance and efficiency.
+* **Hash (sha256)** to save passwords securly.
+* **MITM Protection** with verification of public key.
+* **Brute-Force Security** protection against brute force attack.
+* **Easy** this messaging is very easy to use.
 
 ## [+] Installation [+]
 The installation is very easy you must just follow the next steps,
