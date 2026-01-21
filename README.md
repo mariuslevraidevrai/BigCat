@@ -6,8 +6,6 @@
 </div>
 > A free open-source secure messaging system written in Python.
 
-![BigCat Logo](bigcat.png)
-
 ## [*] Features [*]
 * **RSA 4096-bit** key exchange.
 * **Fernet (AES-128)** symmetric encryption for messages.
