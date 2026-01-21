@@ -20,6 +20,7 @@ The installation is very easy you must just follow the next steps,
 To set up the environment and dependencies :
 ```bash
 make install
+```
 And to run BigCat :
 ```bash
 make run
